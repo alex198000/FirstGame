@@ -29,10 +29,7 @@ public class box : MonoBehaviour
 
 
 
-        if(transform.position.y <= -3)
-        {
-            print("Земля");
-        }
+        
         if (transform.position.y <= -10)
         {
             box2.transform.position = Vector3.zero; // transform.position = new Vector3.(0,0,0);
