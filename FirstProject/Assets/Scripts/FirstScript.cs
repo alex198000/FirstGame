@@ -6,8 +6,9 @@ using UnityEngine;
 public class FirstScript : MonoBehaviour
 {
 
+    [SerializeField] GameObject pLost;
 
-    
+
     [Header("Параметры поездки")]
     [SerializeField] private float dist = 16f;
     [SerializeField] private float speed = 60f;
