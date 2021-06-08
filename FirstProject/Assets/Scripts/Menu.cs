@@ -10,10 +10,7 @@ public class Menu : MonoBehaviour {
 
     private void Start()
     {
-        if (pLost.GetComponent<AudioSource>().mute == true)
-            PlayerPrefs.SetInt("SoundOff", 1);
-        else
-                PlayerPrefs.SetInt("SoundOff", 0);
+        
     }
 
     void OnGUI()
@@ -80,7 +77,10 @@ public class Menu : MonoBehaviour {
         if (GUI.Button(new Rect(Screen.width - 250, 250, 200, 55), "Music"))
         {
             pLost.GetComponent<AudioSource>().mute = !pLost.GetComponent<AudioSource>().mute;
-            PlayerPrefs.GetInt("SoundOff", 1);
+            if (pLost.GetComponent<AudioSource>().mute == true)
+                PlayerPrefs.SetInt("SoundOff", 1);
+            else
+                PlayerPrefs.SetInt("SoundOff", 0);
         }
         if (pLost.GetComponent<AudioSource>().mute == true)
         {
