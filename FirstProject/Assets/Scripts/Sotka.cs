@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Sotka : MonoBehaviour
 {
+<<<<<<< HEAD
     [SerializeField] private int length = 50;
     [SerializeField] private int width = 50;
     [SerializeField] private int reference = 20;
@@ -22,15 +23,30 @@ public class Sotka : MonoBehaviour
         metrKvadr = price / sotka;
         BestKvadr(sotka, price);
         Optima(sotka1 = 60, sotka2 = 50, sotka3 = 40);
+=======
+    [SerializeField] private int length = 15;
+    [SerializeField] private int width = 15;
+    [SerializeField] private int reference = 20;
+
+    void Start()
+    {
+        Purchase(20, 25, 200);
+>>>>>>> 68cc00ae11964049aa523491af09033745773a97
     }
 
     // Update is called once per frame
     private void Purchase(int length, int width, int reference)
     {
+<<<<<<< HEAD
         if (sotka >= reference)
         {
             print("Покупаем по цене " + sotka * price);
            
+=======
+        if ((length * width / 100) >= reference)
+        {
+            print("Покупаем");
+>>>>>>> 68cc00ae11964049aa523491af09033745773a97
         }
 
 
@@ -39,6 +55,7 @@ public class Sotka : MonoBehaviour
             print("не покупаем");
         }
     }
+<<<<<<< HEAD
     private void BestKvadr(int sotka, int price)
     {
         metrKvadr = price / sotka;
@@ -65,6 +82,8 @@ public class Sotka : MonoBehaviour
         }
     }
        
+=======
+>>>>>>> 68cc00ae11964049aa523491af09033745773a97
 
 }
 
