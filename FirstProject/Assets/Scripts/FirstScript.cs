@@ -9,7 +9,7 @@ public class FirstScript : MonoBehaviour
     [SerializeField] GameObject pLost;
 
 
-<<<<<<< HEAD
+
     /*
 =======
 >>>>>>> 68cc00ae11964049aa523491af09033745773a97
