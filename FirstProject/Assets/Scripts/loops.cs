@@ -16,31 +16,46 @@ public class loops : MonoBehaviour
 
     // do {
     //операторы;
-   //while (условие) ;
+    //while (условие) ;
 
-
-
-void Start()
+    int s = 1;
+    int i = 1;
+    void Start()
     {
 
 
-        int j = 30;    // дней
-        int s = 1;      // шаг
+
+
+
+
+
+
+
 
         do
         {
             print(s + " »юн€");
-            s++;         // увеличиваем степень на 1
+            s++;
         }
-        while (s <= 30);  // цик выполн€етс€ пока степень меньше или равна 10
+        while (s <= 30);
 
 
 
+        while (i <= 30)
+        {
+            print(i + " »юн€");
+            i++;
+        }
+
+
+        for (int s = 1; s <= 30; s++)
+        {
+            print(s + " »юн€");
+        }
 
 
 
-
-
+    }
 
 
 
@@ -151,7 +166,7 @@ void Start()
         // }
         //// print(j);
         //// print("Ful");
-    }
+    //}
 
     // Update is called once per frame
     void Update()
