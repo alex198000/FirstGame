@@ -4,40 +4,87 @@ using UnityEngine;
 
 public class arrays : MonoBehaviour
 {
-    [SerializeField] private int[] myArray; // Обьявили массив
-
-    [SerializeField] private int[] myArray1 = new int[3];  // обьявили массив и задали размер
-
-    [SerializeField] private int[] myArray2 = new int[3] { 1, 2, 3 };
-    
-                                                      //  0 1  2  3  4  5  6  индексы
-    [SerializeField] private int[] myArray3 = new int[] { 1, 2, 3, 4, 5, 6, 7};
+    [SerializeField] private float [] profitability; // Обьявили массив рентабельности
 
 
+//        profitability[0] = sotka1;
+//        profitability[1] = sotka2;
+//        profitability[2] = sotka3;
 
-    void Start()
+//        float[] profitability = {sotka1, sotka2, sotka3};
+
+//    Array.Sort(profitability);
+             
+//foreach(int 3 in profitability)
+//{
+//    Console.Write($"{3} \t");
+//}
+
+
+void Start()
     {
-        print(myArray[0]);
-        myArray[0] = 1000;
-        print(myArray[00]);
+
+        
+
+        Optima(BestKvadr(10f, 20f), BestKvadr(20f, 2f), BestKvadr(2f, 30f));
 
 
-
-
-
-
-
-
-
-
-
-        //print(myArray[0]);
-        //print(myArray[1]);
-        //print(myArray[3]);
+        
     }
 
-    // Update is called once per frame
-    void Update()
+    private float BestKvadr(float sotka, float price)
+    {
+        float metrKvadr = price / sotka;
+        print("1 кв метр выходит по цене " + metrKvadr);
+        return metrKvadr;
+
+    }
+
+    private void Optima(float sotka1, float sotka2, float sotka3)
+    {
+        print(sotka1);
+        print(sotka2);
+        print(sotka3);
+      
+
+
+        if ((sotka1 < sotka2) && (sotka1 < sotka3))
+        {
+            print("Самая выгодная сотка №1 " + sotka1);
+        }
+        else if ((sotka2 < sotka1) && (sotka2 < sotka3))
+        {
+            print("Самая выгодная сотка №2 " + sotka2);
+        }
+        else if ((sotka3 < sotka1) && (sotka3 < sotka2))
+        {
+            print("Самая выгодная сотка №3 " + sotka3);
+        }
+    }
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+//print(myArray[0]);
+//print(myArray[1]);
+//print(myArray[3]);
+
+
+// Update is called once per frame
+void Update()
     {
         
     }
