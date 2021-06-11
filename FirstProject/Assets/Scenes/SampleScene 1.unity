@@ -604,13 +604,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1696503102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aca7c87c05759c14b9262815c3d39038, type: 3}
+  m_Script: {fileID: 11500000, guid: bd3f06cac3009e648a5c6ea0942edef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myArray: 0a00000005000000010000006400000002000000
-  myArray1: 000000000000000000000000
-  myArray2: 010000000200000003000000
-  myArray3: 01000000020000000300000004000000050000000600000007000000
+  cars: []
+  myCars:
+  - "\u041F\u043E\u0440\u0448\u0435"
+  - "\u041B\u0430\u043C\u0431\u0430"
+  - "\u0416\u0438\u0433\u0443\u043B\u044C"
+  - "\u0425\u0430\u043C\u043C\u0435\u0440"
+  - "\u0422\u043E\u0439\u043E\u0442\u0430"
 --- !u!4 &1696503104
 Transform:
   m_ObjectHideFlags: 0
