@@ -10,6 +10,11 @@ public class MyLists : MonoBehaviour
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 025880c19b686193fa68fb34943724878263cbd3
 
     void Start()
     {
@@ -29,5 +34,15 @@ public class MyLists : MonoBehaviour
         print("Всего " + myCars.Count);
 
 
+<<<<<<< HEAD
+=======
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+   
+>>>>>>> 025880c19b686193fa68fb34943724878263cbd3
     }
 }
