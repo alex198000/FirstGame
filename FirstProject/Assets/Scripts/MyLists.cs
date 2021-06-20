@@ -10,11 +10,11 @@ public class MyLists : MonoBehaviour
 
 
 
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 
 
->>>>>>> 025880c19b686193fa68fb34943724878263cbd3
+//>>>>>>> 025880c19b686193fa68fb34943724878263cbd3
 
     void Start()
     {
@@ -34,8 +34,8 @@ public class MyLists : MonoBehaviour
         print("Всего " + myCars.Count);
 
 
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 
     }
 
@@ -43,6 +43,6 @@ public class MyLists : MonoBehaviour
     void Update()
     {
    
->>>>>>> 025880c19b686193fa68fb34943724878263cbd3
+//>>>>>>> 025880c19b686193fa68fb34943724878263cbd3
     }
 }
