@@ -5,30 +5,44 @@ using UnityEngine;
 public class FindRombs : MonoBehaviour
 {
 
-    private List<GameObject> rombs; // = new List<GameObject>()
-    private GameObject yellowBox;
-
-    private void Awake()
-    {
-        yellowBox = GameObject.Find("Box");
-        rombs = new List<GameObject>(GameObject.FindGameObjectsWithTag("Diamont"));
-    }
-
-
+    GameObject[] rombs;
+    Rigidbody2D rombRigi;
+    GameObject sprRend;
+    GameObject sprTrig;
+ 
 
     void Start()
     {
-       foreach(GameObject romb in rombs)
-        {
-            romb.transform.position = Vector3.zero;
-        }
+        rombs = GameObject.FindGameObjectsWithTag("Diamont");
+        sprRend = GameObject.FindGameObjectWithTag("Finish");
+        sprTrig = GameObject.FindGameObjectWithTag("trigger");
+    }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+
+        if (col.gameObject.tag == "Diamont")
+        {
+            
+            foreach (GameObject romb in rombs)
+                {
+                rombRigi = romb.GetComponent<Rigidbody2D>();
+                   rombRigi.gravityScale = -0.5f;
+                }
+         
+        }
 
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    void OnTriggerExit2D(Collider2D col)
     {
-        
+        if (col.gameObject.tag == "Diamont")
+        {
+            sprTrig.GetComponent<SpriteRenderer>().material.color = new Color32((byte)Random.Range(0, 255), (byte)Random.Range(0, 255), (byte)Random.Range(0, 255), 255);
+            sprRend.GetComponent<SpriteRenderer>().material.color = new Color32((byte)Random.Range(0, 255), (byte)Random.Range(0, 255), (byte)Random.Range(0, 255), 255);
+        }
+       
     }
 }
