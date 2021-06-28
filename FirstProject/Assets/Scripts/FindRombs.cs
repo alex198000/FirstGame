@@ -25,11 +25,12 @@ public class FindRombs : MonoBehaviour
         if (col.gameObject.tag == "Diamont")
         {
 
-            foreach (GameObject romb in rombs)
-            {
-                rombRigi = romb.GetComponent<Rigidbody2D>();
-                rombRigi.gravityScale = -0.5f;
-            }
+           // foreach (GameObject romb in rombs)
+            //{
+               // rombRigi = romb.GetComponent<Rigidbody2D>();
+            rombRigi = col.GetComponent<Rigidbody2D>();
+            rombRigi.gravityScale = -0.5f;
+            //}
 
             // romb.GetComponent<Rigidbody2D>().gravityScale = -0.5f;
 

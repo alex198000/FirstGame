@@ -667,6 +667,7 @@ GameObject:
   - component: {fileID: 902835863}
   - component: {fileID: 902835862}
   - component: {fileID: 902835861}
+  - component: {fileID: 902835864}
   m_Layer: 0
   m_Name: TrigerZone
   m_TagString: trigger
@@ -766,6 +767,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &902835864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902835860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618f3f87ca864a5499ed7f03d9c34b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rombs: []
 --- !u!1 &1042964751
 GameObject:
   m_ObjectHideFlags: 0
