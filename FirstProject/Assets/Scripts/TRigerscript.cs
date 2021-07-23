@@ -7,9 +7,9 @@ public class TRigerscript : MonoBehaviour
     //private List<GameObject> rombs;
     SpriteRenderer spRed;
     SpriteRenderer spRomb;
-
+    Rigidbody2D rombRigi;
     [SerializeField] private List<GameObject> rombs = new List<GameObject>();
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerStay2D(Collider2D col)
     {
         if (col.gameObject.tag == "Diamont")
         {
@@ -29,7 +29,8 @@ public class TRigerscript : MonoBehaviour
             //3
             rombs.Add(col.gameObject);
 
-
+            rombRigi = col.GetComponent<Rigidbody2D>();
+            rombRigi.gravityScale = 1.5f;
         }
      
 

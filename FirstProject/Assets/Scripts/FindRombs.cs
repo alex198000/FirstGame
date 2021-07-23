@@ -29,7 +29,7 @@ public class FindRombs : MonoBehaviour
             //{
                // rombRigi = romb.GetComponent<Rigidbody2D>();
             rombRigi = col.GetComponent<Rigidbody2D>();
-            rombRigi.gravityScale = -0.5f;
+            rombRigi.gravityScale = -1.5f;
             //}
 
             // romb.GetComponent<Rigidbody2D>().gravityScale = -0.5f;
